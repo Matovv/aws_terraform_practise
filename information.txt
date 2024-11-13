@@ -1,3 +1,0 @@
-AWS test user for Terraform:
-Login: terraform-user:Terraform!234
-CLI: AKIAZI2LENBH57U7Z3BU:H9MAx667mHPh5TnzeeaOZmNQcllrM0PMNY/LoZxI
