@@ -1,0 +1,29 @@
+## BUILT IN
+
+# enforce style rules for your config
+
+- terraform fmt -check      // checks if formatter would make changes
+- terraform fmt             // applies those changes
+
+
+# validate  - checks that configuration are valid
+
+- terraform validate
+
+
+# custom validation rules:
+
+variable "short_variable" {
+    type = string
+
+    validation {
+        condition = length(var.short_variable) < 4
+        error_message = "The short_variable value must be less than 4 characters!"
+    }
+}
+
+- terraform plan    // will check custom validation
+
+# EXTERNAL
+
+# tflint, checkov, terrascan, terraform-compliance, snyk, Terraform Sentine
